@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-image: url("../images/metallic-image.jpg");
+}
+
+header {
+    padding: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    background-image: url("../images/HeaderBanner.png");
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.flex-container-aboutMe {
+    display: flex;
+  }
+
+.flex-container-aboutMe > div.aboutMeText {
+    
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    
+  } 
+
+.flex-container-aboutMe > div.AboutMeTitle {
+   
+    margin: 10px;
+    padding: 10px;
+    flex-basis:1000px;
+    border-right-style: solid;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+  } 
+
+.flex-container-work {
+    display: flex;
+  }
+
+.flex-container-work > div.AboutWorkTitle {
+
+    margin: 10px;
+    padding: 10px;
+    border-right-style: solid;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    width: 285.67px;
+}
+
+.flex-container-aboutMe > div.AboutWorkText {
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 2;
+  } 
+
+  .flex-container-contact {
+    display: flex;
+  }
+
+  .flex-container-contact > div.ContactTitle {
+    margin: 10px;
+    padding: 10px;
+    border-right-style: solid;
+    text-align: center;
+    line-height: 200px;
+    font-size: 50px;
+    width: 285.67px;
+}
+
+.flex-container-contact > div.ContactText {
+    margin: 10px;
+    padding: 10px;
+    flex-grow: 2;
+  } 
+
+p {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+
+
+.products {
+    flex: 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+.card1 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    padding: 50px;
+    height: 150px;
+   /* margin: auto; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url("../images/Calculator.PNG");
+    color: #ffffff;
+} 
+
+.card2 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../images/DigiConnect.PNG");
+    color: #ffffff;
+} 
+
+.card3 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("../images/LED\ Wall.PNG");
+    color: #ffffff;
+} 
+
+.card4 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    background-image: url("../images/MeanStack.PNG");
+} 
+
+.card5 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 150px;
+    width: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    background-image: url("../images/MeanStack.PNG");
+} 
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+div.ContactText nav ul {
+    list-style-type: none;
+}
+
+div.ContactText nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+div.ContactText nav ul li a{
+    color: #0e0c0c;
+    text-decoration: underline;
+}
+
+
+
+.Topics {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
