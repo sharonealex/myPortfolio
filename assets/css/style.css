@@ -1,3 +1,8 @@
+:root {
+  --blue: #2a607c;
+  --white: #ffffff;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,9 +17,9 @@ body {
 header {
     padding: 80px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: var(--blue);
     background-image: url("../images/HeaderBanner.png");
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 20px;
 }
 
@@ -41,7 +46,7 @@ header nav ul li {
 }
 
 a {
-    color: #ffffff;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -50,7 +55,6 @@ a {
   }
 
 .flex-container-aboutMe > div.aboutMeText {
-    
     margin: 10px;
     padding: 10px;
     font-size: 30px;
@@ -61,11 +65,9 @@ a {
 
 
 .flex-container-aboutMe > div.AboutMeTitle {
-   
     margin: 10px;
     padding: 10px;
     flex-basis: 30%;
-   /* flex-basis:1000px;*/
     border-right-style: solid;
     text-align: center;
     line-height: 200px;
@@ -78,7 +80,6 @@ a {
   }
 
 .flex-container-work > div.AboutWorkTitle {
-
     margin: 10px;
     padding: 10px;
     border-right-style: solid;
@@ -127,7 +128,6 @@ p {
 
 .products {
     flex: 4;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -142,10 +142,9 @@ p {
     margin-bottom: 40px;
     padding: 50px;
     height: 150px;
-   /* margin: auto; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-image: url("../images/Calculator.PNG");
-    color: #ffffff;
+    background-image: url("../images/Calculator.PNG");
+    color: var(--white);
     transition: all 0.5s ease-in-out;
 } 
 
@@ -171,7 +170,7 @@ p {
     width: 40%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url("../images/DigiConnect.PNG");
-    color: #ffffff;
+    color: var(--white);
 } 
 
 .card2:hover,
@@ -185,16 +184,16 @@ p {
 
 .card3 {
   box-shadow: 20px 20px 5px #413d3d;
-    border-style: solid;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50px;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 150px;
-    width: 40%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url("../images/LED\ Wall.PNG");
-    color: #ffffff;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 150px;
+  width: 40%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url("../images/LED\ Wall.PNG");
+  color: var(--white);
 } 
 
 .card3:hover,
@@ -208,16 +207,16 @@ p {
 
 .card4 {
   box-shadow: 20px 20px 5px #413d3d;
-    border-style: solid;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50px;
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 150px;
-    width: 40%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-    background-image: url("../images/MeanStack.PNG");
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 150px;
+  width: 40%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  background-image: url("../images/MeanStack.PNG");
 } 
 
 .card4:hover,
@@ -231,7 +230,7 @@ p {
 
 .card5 {
   box-shadow: 20px 20px 5px #413d3d;
-    border-style: solid;
+  border-style: solid;
   border-width: 1px;
   border-radius: 50px;
     margin-bottom: 20px;
