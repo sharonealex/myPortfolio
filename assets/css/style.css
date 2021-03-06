@@ -252,6 +252,8 @@ p {
   margin-top: -5px;
 }
 
+/*Style settings for the contact section of portfolio*/
+
 div.ContactText {
   display: flex;
   align-items: center;
@@ -272,6 +274,8 @@ div.ContactText nav ul li {
 div.ContactText nav ul li a{
     color: #0e0c0c;
     text-decoration: underline;
+    text-decoration-color: var(--blue);
+    font-size: 20px;
 } 
 
 /*
