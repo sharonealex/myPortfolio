@@ -54,18 +54,23 @@ a {
     margin: 10px;
     padding: 10px;
     font-size: 30px;
-    
+    flex-basis: 70%;
+    flex: 1 1 20em; 
+    align-content: center;
   } 
+
 
 .flex-container-aboutMe > div.AboutMeTitle {
    
     margin: 10px;
     padding: 10px;
-    flex-basis:1000px;
+    flex-basis: 30%;
+   /* flex-basis:1000px;*/
     border-right-style: solid;
     text-align: center;
     line-height: 200px;
     font-size: 50px;
+    flex: 1 1 20em; 
   } 
 
 .flex-container-work {
@@ -81,12 +86,14 @@ a {
     line-height: 200px;
     font-size: 50px;
     width: 285.67px;
+    flex-basis: 30%
 }
 
 .flex-container-aboutMe > div.AboutWorkText {
     margin: 10px;
     padding: 10px;
     flex-grow: 2;
+    flex-basis: 70%;
   } 
 
   .flex-container-contact {
@@ -101,12 +108,14 @@ a {
     line-height: 200px;
     font-size: 50px;
     width: 285.67px;
+    flex-basis: 30%;
 }
 
 .flex-container-contact > div.ContactText {
     margin: 10px;
     padding: 10px;
     flex-grow: 2;
+    flex-basis: 70%;
   } 
 
 p {
@@ -126,7 +135,7 @@ p {
   }
 
 .card1 {
-    box-shadow: 10px 10px 5px #aaaaaa;
+    box-shadow: 20px 20px 5px #413d3d;
     border-style: solid;
     border-width: 1px;
     border-radius: 50px;
@@ -137,10 +146,22 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: url("../images/Calculator.PNG");
     color: #ffffff;
+    transition: all 0.5s ease-in-out;
 } 
 
+
+.card1:hover,
+.card1:hover {
+  transform: scale(1.25); 
+  box-shadow: inset 0px 0px 8px rgb(245, 241, 245), 0 0 15px rgb(149, 26, 206);
+  position: relative;
+  margin-top: -5px;
+}
+
+
+
 .card2 {
-    box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 20px 20px 5px #413d3d;
     border-style: solid;
   border-width: 1px;
   border-radius: 50px;
@@ -153,8 +174,17 @@ p {
     color: #ffffff;
 } 
 
+.card2:hover,
+.card2:hover {
+  transform: scale(1.25);
+  box-shadow: inset 0px 0px 8px rgb(245, 241, 245), 0 0 15px rgb(149, 26, 206);
+  position: relative;
+  margin-top: -5px;
+}
+
+
 .card3 {
-    box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 20px 20px 5px #413d3d;
     border-style: solid;
   border-width: 1px;
   border-radius: 50px;
@@ -167,8 +197,17 @@ p {
     color: #ffffff;
 } 
 
+.card3:hover,
+.card3:hover {
+  transform: scale(1.25);
+  box-shadow: inset 0px 0px 8px rgb(245, 241, 245), 0 0 15px rgb(149, 26, 206);
+  position: relative;
+  margin-top: -5px;
+}
+
+
 .card4 {
-    box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 20px 20px 5px #413d3d;
     border-style: solid;
   border-width: 1px;
   border-radius: 50px;
@@ -180,9 +219,18 @@ p {
     color: #ffffff;
     background-image: url("../images/MeanStack.PNG");
 } 
+
+.card4:hover,
+.card4:hover {
+  transform: scale(1.25);
+  box-shadow: inset 0px 0px 8px rgb(245, 241, 245), 0 0 15px rgb(149, 26, 206);
+  position: relative;
+  margin-top: -5px;
+}
+
 
 .card5 {
-    box-shadow: 10px 10px 5px #aaaaaa;
+  box-shadow: 20px 20px 5px #413d3d;
     border-style: solid;
   border-width: 1px;
   border-radius: 50px;
@@ -195,40 +243,42 @@ p {
     background-image: url("../images/MeanStack.PNG");
 } 
 
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+.card5:hover,
+.card5:hover {
+  transform: scale(1.25);
+  box-shadow: inset 0px 0px 8px rgb(245, 241, 245), 0 0 15px rgb(149, 26, 206);
+  position: relative;
+  margin-top: -5px;
+}
+
+
+
+
+div.ContactText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div.ContactText nav ul {
-    list-style-type: none;
-}
+  
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  list-style-type: none;
+
+} 
 
 div.ContactText nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+  
+    margin-left: 40px; 
+    
+   
 }
-
 div.ContactText nav ul li a{
     color: #0e0c0c;
     text-decoration: underline;
-}
-
-
-
-.Topics {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
+} 
 
 footer {
     padding: 30px;
@@ -239,4 +289,27 @@ footer {
 
 footer h2 {
     font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .cont { 
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .cont:last-child {
+    flex-grow: 1;
+  }
+
+  /* media query for larger screens */
+@media screen and (min-width: 992px) {
+
+  .cont {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
 }
