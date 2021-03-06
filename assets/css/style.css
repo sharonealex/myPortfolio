@@ -1,19 +1,22 @@
+/*abstracting out common css variables to be accessed as functions*/
 :root {
   --blue: #2a607c;
   --white: #ffffff;
 }
 
+/* universal css properties for box borders*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/*setting background image for body*/
 body {
 
     background-image: url("../images/metallic-image.jpg");
 }
-
+ 
+/*setting styling for header navigation*/
 header {
     padding: 80px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,7 +52,9 @@ a {
     color: var(--white);
     text-decoration: none;
 }
-
+/*Setting the main content styles, By leveraging the flex properties.
+This is for aboutMe row styled into two containers.
+*/
 .flex-container-aboutMe {
     display: flex;
   }
@@ -74,7 +79,9 @@ a {
     font-size: 50px;
     flex: 1 1 20em; 
   } 
-
+/*Setting the main content styles, By leveraging the flex properties.
+This is for work row styled into two containers.
+*/
 .flex-container-work {
     display: flex;
   }
@@ -90,13 +97,16 @@ a {
     flex-basis: 30%
 }
 
-.flex-container-aboutMe > div.AboutWorkText {
+.flex-container-work > div.AboutWorkText {
     margin: 10px;
     padding: 10px;
     flex-grow: 2;
     flex-basis: 70%;
   } 
 
+/*Setting the main content styles, By leveraging the flex properties.
+This is for aboutMe row styled into two containers.
+*/
   .flex-container-contact {
     display: flex;
   }
@@ -124,8 +134,6 @@ p {
     padding-bottom: 20px;
 }
 
-
-
 .products {
     flex: 4;
     display: flex;
@@ -148,7 +156,6 @@ p {
     transition: all 0.5s ease-in-out;
 } 
 
-
 .card1:hover,
 .card1:hover {
   transform: scale(1.25); 
@@ -156,8 +163,6 @@ p {
   position: relative;
   margin-top: -5px;
 }
-
-
 
 .card2 {
   box-shadow: 20px 20px 5px #413d3d;
@@ -181,7 +186,6 @@ p {
   margin-top: -5px;
 }
 
-
 .card3 {
   box-shadow: 20px 20px 5px #413d3d;
   border-style: solid;
@@ -203,7 +207,6 @@ p {
   position: relative;
   margin-top: -5px;
 }
-
 
 .card4 {
   box-shadow: 20px 20px 5px #413d3d;
@@ -227,7 +230,6 @@ p {
   margin-top: -5px;
 }
 
-
 .card5 {
   box-shadow: 20px 20px 5px #413d3d;
   border-style: solid;
@@ -250,9 +252,6 @@ p {
   margin-top: -5px;
 }
 
-
-
-
 div.ContactText {
   display: flex;
   align-items: center;
@@ -260,25 +259,24 @@ div.ContactText {
 }
 
 div.ContactText nav ul {
-  
   display: flex;
   align-items: center;
   justify-content:space-evenly;
   list-style-type: none;
-
 } 
 
 div.ContactText nav ul li {
-  
-    margin-left: 40px; 
-    
-   
+    margin-left: 40px;   
 }
+
 div.ContactText nav ul li a{
     color: #0e0c0c;
     text-decoration: underline;
 } 
 
+/*
+Styling for footer for padding, text font and alignment.
+*/
 footer {
     padding: 30px;
     clear: both;
@@ -291,13 +289,13 @@ footer h2 {
 }
 
 @media screen and (min-width: 768px) {
-  /* on tablets, set columns to only be 50% of the width and not grow */
+  /* for tablets, setting width for 50% */
   .cont { 
     flex: 0 0 50%;
     max-width: 50%;
   }
 
-  /* select the last child to grow to full width if it has space to grow */
+  /*last child to grow to full width if it has space to grow */
   .cont:last-child {
     flex-grow: 1;
   }
@@ -305,7 +303,7 @@ footer h2 {
   /* media query for larger screens */
 @media screen and (min-width: 992px) {
 
-  .cont {
+.cont {
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
