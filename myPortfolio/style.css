@@ -32,16 +32,15 @@ header > nav {
 
 nav > a {
     color: white;
-    background-color: teal;
     text-decoration: none;
     padding: 5px 10px;
     margin-right: 10px;
     background-image: linear-gradient(270deg, blue 0%, purple 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
-    background-position: top;
+    background-position: bottom;
      transition: all 0.5s ease-in; 
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 
 }
 
@@ -50,3 +49,25 @@ nav a:hover {
     color: red;
   }
   
+
+ main {
+     margin: 45px 20px;
+     border: yellowgreen 2px solid;
+ } 
+
+
+ .hero-banner {
+    background-image: url("./images/diana-banner.jpg"), linear-gradient(180deg, blue 0%, purple 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 70vh;
+    color: white;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    font-size: larger;
+    font-style: italic;
+  }
