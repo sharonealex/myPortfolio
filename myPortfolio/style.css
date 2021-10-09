@@ -94,16 +94,18 @@ main {
 
 .flex-container {
     display: flex;
-    /* flex-wrap: wrap;
-    justify-content: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
   }
 
 .flex-item {
     border: 5px solid var(--secondary);
-    background-color: var(--primary);
+    flex-basis: 25%;
+    flex-grow: 1;
     color: var(--tertiary);
-    /* min-height: 150px;
-    max-height: 150px;
+    min-height: 250px;
+    /*max-height: 150px;
     flex-basis: calc(50% - 1em); */
     display: flex;
     /* align-items: flex-end; */
@@ -114,67 +116,57 @@ main {
     /* background-size: 150%; */
     transition: all 0.5s;
     font-size: 0.9rem;
+   
   }
 
+  .royal-wedding {
+    background-image: url("./images/diana-wedding.jpg");
+    background-size: cover;
+  }
 
-/* 
+  .pic1{
+    background-image: url("./images/diana\ 2.jpg");
+    background-size: cover;
+  }
+
+  .pic2{
+    background-image: url("./images/diana\ 3.jpg");
+    background-size: cover;
+  }
+
+  .pic3{
+    background-image: url("./images/diana\ 4.jpg");
+    background-size: cover;
+  }
+
+  .pic4{
+    background-image: url("./images/diana\ 5.jpg");
+    background-size: cover;
+  }
+
+  .pic5{
+    background-image: url("./images/diana\ 6.jpg");
+    background-size: cover;
+  }
+
+  .pic6{
+    background-image: url("./images/diana\ 7.jpg");
+    background-size: cover;
+  }
+
+  .pic7{
+    background-image: url("./images/diana\ 10.jpg");
+    background-size: cover;
+  }
+
+  .pic8{
+    background-image: url("./images/diana\ 9.jpg");
+    background-size: cover;
+  }
+
+  
+
   .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
-    flex-grow: 2;
-} */
-
-
-/* @media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
-    }
-  
-    header nav {
-      justify-content: center;
-    }
-  
-    .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
-    }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
-  } */
-  
-  /* @media screen and (max-width: 768px) {
-    .flex-item,
-    .flex-item:first-child {
-      flex-basis: 100%;
-    }
-  
-    .flex-item:first-child {
-      min-height: 150px;
-    }
-  
-    .hero-banner {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  } */
+}
