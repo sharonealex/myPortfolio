@@ -1,5 +1,10 @@
 :root {
-}
+    --primary: rgba(68, 88, 119, 1);
+    --secondary: rgba(146, 204, 206, 1);
+    --tertiary: rgba(49, 52, 61, 1);
+    --dark: rgba(28, 29, 33, 1);
+    --light: rgba(238, 238, 247, 1);
+  }
 
 * {
   margin: 0px;
@@ -11,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   height: 15vh;
   background-color: black;
   color: whitesmoke;
@@ -88,32 +94,87 @@ main {
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
   }
 
 .flex-item {
-    color: white;
-    min-height: 150px;
-    flex-basis: 100%;
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    /* min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em); */
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
     background-blend-mode: soft-light;
-    background-repeat: none;
-    background-size:cover;
+    /* background-size: 150%; */
     transition: all 0.5s;
     font-size: 0.9rem;
   }
 
-  .royal-wedding {
-    background-image: url("./images/diana-wedding.jpg");
-  }
 
+/* 
   .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
     flex-grow: 2;
-}
+} */
+
+
+/* @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .page-section > h2,
+    .page-section > div {
+      flex: 0 0 100%;
+    }
+  
+    .page-section > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 7vw;
+    }
+  } */
+  
+  /* @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .contact address {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  } */
