@@ -86,6 +86,7 @@ main {
 .content h2 {
   min-width: 30vw;
   font-size: 48px;
+ 
 }
 
 .content > div {
@@ -103,6 +104,7 @@ main {
     padding: 50px;
     flex: 1 1 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 }
 #charity div a {
@@ -205,4 +207,26 @@ main {
   .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
+}
+
+@media screen and (max-width: 980px) {
+header {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: column;
+}
+
+.flex-container {
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.flex-item:first-child {
+    min-height: 150px;
+    flex-basis: 100%;
+}
+
+
 }
